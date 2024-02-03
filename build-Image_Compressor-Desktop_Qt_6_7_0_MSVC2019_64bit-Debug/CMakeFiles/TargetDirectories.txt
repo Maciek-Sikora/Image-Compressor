@@ -1,0 +1,8 @@
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/Image_Compressor.dir
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/list_install_components.dir
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/install.dir
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/install/local.dir
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/Image_Compressor_autogen_timestamp_deps.dir
+F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/Image_Compressor_autogen.dir

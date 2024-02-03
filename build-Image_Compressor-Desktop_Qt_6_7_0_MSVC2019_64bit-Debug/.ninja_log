@@ -1,0 +1,9 @@
+# ninja log v5
+1	434	7286781185005366	Image_Compressor_autogen/timestamp	969de22b06bf1ec2
+1	434	7286781185005366	Image_Compressor_autogen/mocs_compilation.cpp	969de22b06bf1ec2
+1	434	7286781185005366	F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/Image_Compressor_autogen/timestamp	969de22b06bf1ec2
+1	434	7286781185005366	F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/Image_Compressor_autogen/mocs_compilation.cpp	969de22b06bf1ec2
+441	2391	7286781205009597	CMakeFiles/Image_Compressor.dir/main.cpp.obj	f4f5fcd806cdf9ab
+435	2399	7286781205009597	CMakeFiles/Image_Compressor.dir/Image_Compressor_autogen/mocs_compilation.cpp.obj	4c2b20b2a0ae08c6
+447	2422	7286781205329570	CMakeFiles/Image_Compressor.dir/mainwindow.cpp.obj	879f82d01f02940f
+2422	2970	7286781210419355	Image_Compressor.exe	fca7b486526c308e
