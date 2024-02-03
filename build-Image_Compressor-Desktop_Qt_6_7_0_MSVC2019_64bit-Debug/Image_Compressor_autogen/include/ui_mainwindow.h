@@ -11,8 +11,10 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -22,6 +24,8 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QPushButton *pushButton_SelectPath;
+    QLabel *label_Image;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -29,13 +33,19 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->resize(816, 608);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        pushButton_SelectPath = new QPushButton(centralwidget);
+        pushButton_SelectPath->setObjectName("pushButton_SelectPath");
+        pushButton_SelectPath->setGeometry(QRect(360, 120, 75, 24));
+        label_Image = new QLabel(centralwidget);
+        label_Image->setObjectName("label_Image");
+        label_Image->setGeometry(QRect(410, 30, 49, 16));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 22));
+        menubar->setGeometry(QRect(0, 0, 816, 22));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -49,6 +59,8 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButton_SelectPath->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        label_Image->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
     } // retranslateUi
 
 };

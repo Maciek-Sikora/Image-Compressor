@@ -1,4 +1,6 @@
 F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/Image_Compressor_autogen/EWIEGA46WW/moc_mainwindow.cpp: F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/mainwindow.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QDebug \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QTextStream \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -17,6 +19,7 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qbytearrayview.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcalendar.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qchar.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcompare.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcompare_impl.h \
@@ -30,9 +33,14 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdatetime.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qdir.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qendian.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qexceptionhandling.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfile.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfiledevice.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfileinfo.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qflags.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qfloat16.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qforeach.h \
@@ -43,12 +51,14 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qhash.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiodevice.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterable.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qiterator.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qline.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlist.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlocale.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qlogging.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmalloc.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qmap.h \
@@ -100,6 +110,7 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtimezone.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtnoop.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtpreprocessorsupport.h \
@@ -110,6 +121,7 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtversionchecks.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtypeinfo.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qtypes.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qurl.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvariant.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvarlengtharray.h \
@@ -142,11 +154,48 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h \
-  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qwidget.h \
+  E:/openCv/opencv/build/include/opencv2/core.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/base.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/bufferpool.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/check.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/core.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/cv_cpu_dispatch.h \
+  E:/openCv/opencv/build/include/opencv2/core/cvdef.h \
+  E:/openCv/opencv/build/include/opencv2/core/cvstd.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/cvstd.inl.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/cvstd_wrapper.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/fast_math.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/hal/interface.h \
+  E:/openCv/opencv/build/include/opencv2/core/mat.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/mat.inl.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/matx.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/neon_utils.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/operations.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/optim.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/ovx.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/persistence.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/saturate.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/traits.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/types.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/utility.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/version.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/vsx_utils.hpp \
+  E:/openCv/opencv/build/include/opencv2/highgui.hpp \
+  E:/openCv/opencv/build/include/opencv2/highgui/highgui.hpp \
+  E:/openCv/opencv/build/include/opencv2/imgcodecs.hpp \
+  E:/openCv/opencv/build/include/opencv2/imgproc.hpp \
+  E:/openCv/opencv/build/include/opencv2/imgproc/imgproc.hpp \
+  E:/openCv/opencv/build/include/opencv2/imgproc/segmentation.hpp \
+  E:/openCv/opencv/build/include/opencv2/opencv_modules.hpp \
+  E:/openCv/opencv/build/include/opencv2/videoio.hpp

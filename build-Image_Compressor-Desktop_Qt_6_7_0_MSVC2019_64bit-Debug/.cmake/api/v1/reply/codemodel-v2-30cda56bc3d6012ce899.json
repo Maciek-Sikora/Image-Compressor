@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-fadaacf2d9e7fcdbf770.json",
+					"jsonFile" : "directory-.-Debug-bd21eefa3e8561cd0c6e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Image_Compressor::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Image_Compressor-Debug-465f6636ec6f39e072bd.json",
+					"jsonFile" : "target-Image_Compressor-Debug-ab8bc202dfa2d45f2665.json",
 					"name" : "Image_Compressor",
 					"projectIndex" : 0
 				},

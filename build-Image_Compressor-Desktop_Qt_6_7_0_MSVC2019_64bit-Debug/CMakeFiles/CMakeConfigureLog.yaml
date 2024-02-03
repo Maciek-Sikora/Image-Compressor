@@ -63,8 +63,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-u3negg"
-      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-u3negg"
+      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ozpiwj"
+      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ozpiwj"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -72,11 +72,11 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-u3negg'
+        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ozpiwj'
         
-        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2e124
-        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2e124.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_2e124.dir\\ /FS -c C:\\Qt\\Tools\\CMake_64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
-        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_2e124.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_2e124.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_2e124.exe /implib:cmTC_2e124.lib /pdb:cmTC_2e124.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8b093
+        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8b093.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_8b093.dir\\ /FS -c C:\\Qt\\Tools\\CMake_64\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_8b093.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_8b093.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_8b093.exe /implib:cmTC_8b093.lib /pdb:cmTC_8b093.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
@@ -94,8 +94,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ww86uf"
-      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ww86uf"
+      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-2ifi03"
+      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-2ifi03"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -105,13 +105,13 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-ww86uf'
+        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-2ifi03'
         
-        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7d4a7
-        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_7d4a7.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_7d4a7.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ww86uf\\src.cxx
-        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_7d4a7.dir/src.cxx.obj 
-        "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_7d4a7.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_7d4a7.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ww86uf\\src.cxx
-        F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ww86uf\\src.cxx(1): fatal error C1083: Nie można otworzyć pliku dołącz: 'pthread.h': No such file or directory
+        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_bd452
+        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_bd452.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_bd452.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2ifi03\\src.cxx
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_bd452.dir/src.cxx.obj 
+        "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP -DCMAKE_HAVE_LIBC_PTHREAD  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_bd452.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_bd452.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2ifi03\\src.cxx
+        F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2ifi03\\src.cxx(1): fatal error C1083: Nie można otworzyć pliku dołącz: 'pthread.h': No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
@@ -129,8 +129,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-hgxm0l"
-      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-hgxm0l"
+      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-sv78zz"
+      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-sv78zz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -140,14 +140,14 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-hgxm0l'
+        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-sv78zz'
         
-        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8cb16
-        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_8cb16.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_8cb16.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-hgxm0l\\CheckFunctionExists.cxx
-        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_8cb16.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_8cb16.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_8cb16.exe /implib:cmTC_8cb16.lib /pdb:cmTC_8cb16.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_8cb16.exe 
-        cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_8cb16.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_8cb16.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_8cb16.exe /implib:cmTC_8cb16.lib /pdb:cmTC_8cb16.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8cb16.dir\\CheckFunctionExists.cxx.obj /out:cmTC_8cb16.exe /implib:cmTC_8cb16.lib /pdb:cmTC_8cb16.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_8cb16.dir/intermediate.manifest CMakeFiles\\cmTC_8cb16.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b7ef2
+        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_b7ef2.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_b7ef2.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-sv78zz\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b7ef2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_b7ef2.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_b7ef2.exe /implib:cmTC_b7ef2.lib /pdb:cmTC_b7ef2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_b7ef2.exe 
+        cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_b7ef2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_b7ef2.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_b7ef2.exe /implib:cmTC_b7ef2.lib /pdb:cmTC_b7ef2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthreads.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b7ef2.dir\\CheckFunctionExists.cxx.obj /out:cmTC_b7ef2.exe /implib:cmTC_b7ef2.lib /pdb:cmTC_b7ef2.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b7ef2.dir/intermediate.manifest CMakeFiles\\cmTC_b7ef2.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: nie można otworzyć pliku "pthreads.lib"
         ninja: build stopped: subcommand failed.
         
@@ -166,8 +166,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-wpcuoi"
-      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-wpcuoi"
+      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-e4tpv9"
+      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-e4tpv9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -177,14 +177,14 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-wpcuoi'
+        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-e4tpv9'
         
-        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c48a6
-        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_c48a6.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_c48a6.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-wpcuoi\\CheckFunctionExists.cxx
-        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c48a6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_c48a6.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_c48a6.exe /implib:cmTC_c48a6.lib /pdb:cmTC_c48a6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        \x1b[31mFAILED: \x1b[0mcmTC_c48a6.exe 
-        cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c48a6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_c48a6.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_c48a6.exe /implib:cmTC_c48a6.lib /pdb:cmTC_c48a6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c48a6.dir\\CheckFunctionExists.cxx.obj /out:cmTC_c48a6.exe /implib:cmTC_c48a6.lib /pdb:cmTC_c48a6.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c48a6.dir/intermediate.manifest CMakeFiles\\cmTC_c48a6.dir/manifest.res" failed (exit code 1104) with the following output:
+        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a116c
+        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP   -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc -DCHECK_FUNCTION_EXISTS=pthread_create /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_a116c.dir\\CheckFunctionExists.cxx.obj /FdCMakeFiles\\cmTC_a116c.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-e4tpv9\\CheckFunctionExists.cxx
+        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a116c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_a116c.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_a116c.exe /implib:cmTC_a116c.lib /pdb:cmTC_a116c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        \x1b[31mFAILED: \x1b[0mcmTC_a116c.exe 
+        cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_a116c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_a116c.dir\\CheckFunctionExists.cxx.obj  /out:cmTC_a116c.exe /implib:cmTC_a116c.lib /pdb:cmTC_a116c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  pthread.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a116c.dir\\CheckFunctionExists.cxx.obj /out:cmTC_a116c.exe /implib:cmTC_a116c.lib /pdb:cmTC_a116c.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a116c.dir/intermediate.manifest CMakeFiles\\cmTC_a116c.dir/manifest.res" failed (exit code 1104) with the following output:
         LINK : fatal error LNK1104: nie można otworzyć pliku "pthread.lib"
         ninja: build stopped: subcommand failed.
         
@@ -208,8 +208,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-qp5mv4"
-      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-qp5mv4"
+      source: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-bxy3ft"
+      binary: "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-bxy3ft"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -219,11 +219,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-qp5mv4'
+        Change Dir: 'F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/CMakeFiles/CMakeScratch/TryCompile-bxy3ft'
         
-        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c25c4
-        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP -DHAVE_STDATOMIC  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_c25c4.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_c25c4.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-qp5mv4\\src.cxx
-        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_c25c4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_c25c4.dir\\src.cxx.obj  /out:cmTC_c25c4.exe /implib:cmTC_c25c4.lib /pdb:cmTC_c25c4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "E:/visual build tool/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f6285
+        [1/2] "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe"  /nologo /TP -DHAVE_STDATOMIC  -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 /showIncludes /FoCMakeFiles\\cmTC_f6285.dir\\src.cxx.obj /FdCMakeFiles\\cmTC_f6285.dir\\ /FS -c F:\\Maciek\\Program\\ProjektOLX\\ImageCompressor\\build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bxy3ft\\src.cxx
+        [2/2] cmd.exe /C "cd . && C:\\Qt\\Tools\\CMake_64\\bin\\cmake.exe -E vs_link_exe --intdir=CMakeFiles\\cmTC_f6285.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100190~1.0\\x64\\mt.exe --manifests  -- "E:\\visual build tool\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\link.exe" /nologo CMakeFiles\\cmTC_f6285.dir\\src.cxx.obj  /out:cmTC_f6285.exe /implib:cmTC_f6285.lib /pdb:cmTC_f6285.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
 ...

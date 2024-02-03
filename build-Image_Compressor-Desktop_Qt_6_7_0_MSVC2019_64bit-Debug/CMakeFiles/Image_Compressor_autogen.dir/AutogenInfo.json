@@ -327,6 +327,14 @@
 		"C:/Qt/6.7.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-debug.cmake",
 		"C:/Qt/6.7.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.7.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
+		"E:/openCv/opencv/build/OpenCVConfig-version.cmake",
+		"E:/openCv/opencv/build/OpenCVConfig.cmake",
+		"E:/openCv/opencv/build/x64/vc16/lib/OpenCVConfig.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake",
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake",
+		"E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules.cmake",
+		"E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake",
+		"E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor",
@@ -365,6 +373,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"E:/openCv/opencv/build/include",
 		"C:/Qt/6.7.0/msvc2019_64/include/QtCore",
 		"C:/Qt/6.7.0/msvc2019_64/include",
 		"C:/Qt/6.7.0/msvc2019_64/mkspecs/win32-msvc",
