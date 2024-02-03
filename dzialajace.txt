@@ -1,0 +1,49 @@
+#include "calculator.h"
+
+Calculator::Calculator(QString& pathToImage):  path(pathToImage) {
+    // cv::Mat cvImage = cv::imread(path.toStdString(), 0);
+
+
+
+    // Image matrix
+    cv::Mat img;
+    cv::Mat result;
+    // Load image in grayscale mode
+    img=cv::imread(path.toStdString(), 0);;
+    img.convertTo(img,CV_32FC1,1.0/255.0);
+    qInfo() << "Source size:" << img.rows*img.cols <<" elements ";
+    // create SVD
+    cv::SVD s;
+    // svd result
+    cv::Mat w,u,vt;
+
+    // computations ...
+    qInfo() << "SVD start";
+    s.compute(img,w,u,vt);
+    qInfo() << "SVD Calculatrd";
+
+    // collect Sigma matrix (diagonal - is eigen values, other - zeros)
+    // we got it in as vector, transform it to diagonal matrix
+    cv::Mat W=cv::Mat::zeros(w.rows,w.rows,CV_32FC1);
+    for(int i=0;i<w.rows;i++)
+    {
+        W.at<float>(i,i)=w.at<float>(i);
+    }
+    qInfo() << "SVD Calculatrd 2";
+    // reduce rank to k
+    int k=25;
+    W=W(cv::Range(0,k),cv::Range(0,k));
+    u=u(cv::Range::all(), cv::Range(0,k));
+    vt=vt(cv::Range(0,k),cv::Range::all());
+
+    // Get compressed image
+    result=u*W*vt;
+    qInfo() << "Result size:" << u.rows*u.cols+k+vt.rows*vt.cols <<" elements ";
+    //---------------------------------------------
+    //
+    //---------------------------------------------
+    imshow("Source Image", img);
+    imshow("Result", result);
+
+}
+

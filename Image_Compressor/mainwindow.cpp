@@ -35,14 +35,8 @@ void MainWindow::on_pushButton_SelectPath_clicked()
 
         QPixmap image(filePath);
         ui->label_Image->setPixmap(image);
+        calculator = new Calculator(filePath);
 
-        cv::Mat cvImage = cv::imread(filePath.toStdString(), cv::IMREAD_COLOR);
-        if (!cvImage.empty()) {
-            cv::imshow("Display window", cvImage);
-            cv::waitKey(0);
-        } else {
-            qCritical() << "Error loading image using OpenCV.";
-        }
     } else {
         qWarning() << "No file selected.";
     }

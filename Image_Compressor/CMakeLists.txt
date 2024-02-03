@@ -16,6 +16,8 @@ set(OpenCV_DIR "E:/openCv/opencv/build")
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
+include_directories("F:/Maciek/Pobrane/eigen-3.4.0")
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
@@ -27,6 +29,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Image_Compressor
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        calculator.h calculator.cpp
+
+        randomized_svd.h
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Image_Compressor APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

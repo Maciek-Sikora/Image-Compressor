@@ -1,6 +1,8 @@
 Image_Compressor_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/QDebug \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QString \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/QTextStream \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/QVector \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -125,6 +127,7 @@ Image_Compressor_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvariant.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvarlengtharray.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtCore/qvector.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtCore/qyieldcpu.h \
@@ -318,80 +321,23 @@ Image_Compressor_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
   C:/Qt/6.7.0/msvc2019_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
   C:/Qt/Tools/CMake_64/bin/cmake.exe \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeNinjaFindMake.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystem.cmake.in \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckLibraryExists.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/MSVC-CXX.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/MSVC.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindThreads.cmake \
@@ -400,8 +346,6 @@ Image_Compressor_autogen/timestamp: \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-MSVC-CXX.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-MSVC.cmake \
@@ -419,6 +363,7 @@ Image_Compressor_autogen/timestamp: \
   E:/openCv/opencv/build/include/opencv2/core/cvstd.hpp \
   E:/openCv/opencv/build/include/opencv2/core/cvstd.inl.hpp \
   E:/openCv/opencv/build/include/opencv2/core/cvstd_wrapper.hpp \
+  E:/openCv/opencv/build/include/opencv2/core/eigen.hpp \
   E:/openCv/opencv/build/include/opencv2/core/fast_math.hpp \
   E:/openCv/opencv/build/include/opencv2/core/hal/interface.h \
   E:/openCv/opencv/build/include/opencv2/core/mat.hpp \
@@ -447,11 +392,191 @@ Image_Compressor_autogen/timestamp: \
   E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake \
   E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake \
   E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules.cmake \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/Cholesky \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/Core \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/Dense \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/Eigenvalues \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/Geometry \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/Householder \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/Jacobi \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/LU \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/QR \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/SVD \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Cholesky/LDLT.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Cholesky/LLT.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/ArithmeticSequence.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Array.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/ArrayBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/ArrayWrapper.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Assign.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/AssignEvaluator.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/BandMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Block.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/BooleanRedux.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CommaInitializer.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/ConditionEstimator.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CoreEvaluators.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CoreIterators.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CwiseBinaryOp.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CwiseNullaryOp.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CwiseTernaryOp.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CwiseUnaryOp.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/CwiseUnaryView.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/DenseBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/DenseCoeffsBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/DenseStorage.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Diagonal.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/DiagonalMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/DiagonalProduct.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Dot.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/EigenBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Fuzzy.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/GeneralProduct.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/GenericPacketMath.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/GlobalFunctions.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/IO.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/IndexedView.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Inverse.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Map.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/MapBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/MathFunctions.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/MathFunctionsImpl.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Matrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/MatrixBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/NestByValue.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/NoAlias.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/NumTraits.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/PartialReduxEvaluator.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/PermutationMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/PlainObjectBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Product.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/ProductEvaluators.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Random.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Redux.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Ref.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Replicate.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Reshaped.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/ReturnByValue.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Reverse.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Select.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/SelfAdjointView.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Solve.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/SolveTriangular.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/SolverBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/StableNorm.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/StlIterators.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Stride.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Swap.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Transpose.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Transpositions.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/TriangularMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/VectorBlock.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/VectorwiseOp.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/Visitor.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/arch/Default/BFloat16.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/arch/Default/ConjHelper.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/arch/Default/Half.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/arch/Default/Settings.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/arch/Default/TypeCasting.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/functors/AssignmentFunctors.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/functors/BinaryFunctors.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/functors/NullaryFunctors.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/functors/StlFunctors.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/functors/TernaryFunctors.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/functors/UnaryFunctors.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/GeneralMatrixVector.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/Parallelizer.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/SelfadjointProduct.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/TriangularMatrixVector.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/products/TriangularSolverVector.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/BlasUtil.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/ConfigureVectorization.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/Constants.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/DisableStupidWarnings.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/ForwardDeclarations.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/IndexedViewHelper.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/IntegralConstant.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/MKL_support.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/Macros.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/Memory.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/Meta.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/ReshapedHelper.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/StaticAssert.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/SymbolicIndex.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Core/util/XprHelper.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/ComplexSchur.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/EigenSolver.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/RealQZ.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/RealSchur.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/AlignedBox.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/AngleAxis.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/EulerAngles.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Homogeneous.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Hyperplane.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/OrthoMethods.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/ParametrizedLine.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Quaternion.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Rotation2D.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/RotationBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Scaling.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Transform.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Translation.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Geometry/Umeyama.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Householder/BlockHouseholder.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Householder/Householder.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Householder/HouseholderSequence.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/Jacobi/Jacobi.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/LU/Determinant.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/LU/FullPivLU.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/LU/InverseImpl.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/LU/PartialPivLU.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/QR/ColPivHouseholderQR.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/QR/FullPivHouseholderQR.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/QR/HouseholderQR.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/SVD/BDCSVD.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/SVD/JacobiSVD.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/SVD/SVDBase.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/SVD/UpperBidiagonalization.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/misc/Image.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/misc/Kernel.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/misc/RealSvd2x2.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/BlockMethods.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/IndexedViewMethods.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+  F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/ReshapedMethods.h \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/CMakeLists.txt \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/calculator.cpp \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/calculator.h \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/main.cpp \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/mainwindow.cpp \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/mainwindow.h \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/mainwindow.ui \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/randomized_svd.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \

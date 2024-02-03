@@ -5,10 +5,7 @@
 #include <QDebug>
 #include <QFileDialog>
 #include <QTextStream>
-#include "opencv2/core/core.hpp"
-#include "opencv2/highgui/highgui.hpp"
-#include "opencv2/imgproc/imgproc.hpp"
-
+#include "calculator.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,5 +26,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    Calculator *calculator;
 };
 #endif // MAINWINDOW_H
