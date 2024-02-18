@@ -46,7 +46,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(669, 456);
+        MainWindow->resize(650, 464);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
@@ -65,6 +65,7 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(label_Image->sizePolicy().hasHeightForWidth());
         label_Image->setSizePolicy(sizePolicy1);
+        label_Image->setPixmap(QPixmap(QString::fromUtf8(":/templates/templates/layout.png")));
         label_Image->setScaledContents(true);
         label_Image->setAlignment(Qt::AlignCenter);
 
@@ -128,7 +129,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 669, 22));
+        menubar->setGeometry(QRect(0, 0, 650, 22));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -142,7 +143,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        label_Image->setText(QCoreApplication::translate("MainWindow", "The image will appear here", nullptr));
+        label_Image->setText(QString());
         pushButton_SelectPath->setText(QCoreApplication::translate("MainWindow", "Add image", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));

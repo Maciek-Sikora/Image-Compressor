@@ -157,6 +157,7 @@ Image_Compressor_autogen/timestamp: \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QDialog \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialog.h \
@@ -577,6 +578,10 @@ Image_Compressor_autogen/timestamp: \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/mainwindow.h \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/mainwindow.ui \
   F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/randomized_svd.h \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/resource.qrc \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/startwindow.cpp \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/startwindow.h \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/startwindow.ui \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \

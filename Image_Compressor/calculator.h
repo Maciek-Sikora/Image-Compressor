@@ -19,15 +19,23 @@
 
 class Calculator
 {
+public:
+    Calculator(QString& pathToImage);
+    void ComputeRsvd(int k);
+    QImage matrixXdToQImage(Eigen::MatrixXd& matrix);
+    QPixmap qPixmap_reconstructed_image;
+
+
 private:
     QString path;
     cv::Mat image;
     cv::Mat w;
     cv::Mat u;
     cv::Mat vt;
-public:
+    Eigen::MatrixXd eigen_matrix;
 
-    Calculator(QString& pathToImage);
+
+
 };
 
 #endif // CALCULATOR_H

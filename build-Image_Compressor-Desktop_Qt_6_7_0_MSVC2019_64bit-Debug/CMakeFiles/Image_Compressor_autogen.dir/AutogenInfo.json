@@ -270,7 +270,8 @@
 		"E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules.cmake",
 		"E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake",
 		"E:/openCv/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/resource.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor",
 	"DEP_FILE" : "F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6_7_0_MSVC2019_64bit-Debug/Image_Compressor_autogen/deps",
@@ -293,6 +294,12 @@
 			"F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/randomized_svd.h",
 			"MU",
 			"EWIEGA46WW/moc_randomized_svd.cpp",
+			null
+		],
+		[
+			"F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/startwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_startwindow.cpp",
 			null
 		]
 	],
@@ -365,6 +372,11 @@
 		],
 		[
 			"F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/startwindow.cpp",
 			"MU",
 			null
 		]

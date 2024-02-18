@@ -6,6 +6,7 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include "calculator.h"
+#include "startwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,9 +24,20 @@ public:
 
 private slots:
     void on_pushButton_SelectPath_clicked();
+    void dropEvent(QDropEvent *e);
+    void dragEnterEvent(QDragEnterEvent *e);
+    void on_horizontalSlider_sliderReleased();
+
+
+
+signals:
+public slots:
+    void setImage(QPixmap qPixmap);
+    void setImage(QString filePath);
 
 private:
     Ui::MainWindow *ui;
     Calculator *calculator;
+    StartWindow *startWindow;
 };
 #endif // MAINWINDOW_H

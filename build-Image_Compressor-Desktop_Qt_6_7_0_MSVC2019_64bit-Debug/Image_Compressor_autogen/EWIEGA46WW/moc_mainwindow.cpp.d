@@ -157,6 +157,7 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QDialog \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QFileDialog \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.0/msvc2019_64/include/QtWidgets/qdialog.h \
@@ -380,4 +381,5 @@ F:/Maciek/Program/ProjektOLX/ImageCompressor/build-Image_Compressor-Desktop_Qt_6
   F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
   F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
   F:/Maciek/Pobrane/eigen-3.4.0/Eigen/src/plugins/ReshapedMethods.h \
-  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/calculator.h
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/calculator.h \
+  F:/Maciek/Program/ProjektOLX/ImageCompressor/Image_Compressor/startwindow.h
