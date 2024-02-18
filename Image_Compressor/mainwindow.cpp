@@ -7,6 +7,7 @@
 #include <QMimeData>
 #include <QScreen>
 #include <QObject>
+#include <QGuiApplication>
 
 
 MainWindow::MainWindow(QWidget *parent)

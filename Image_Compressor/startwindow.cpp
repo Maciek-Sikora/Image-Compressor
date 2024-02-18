@@ -6,6 +6,8 @@
 #include <QDebug>
 #include <QFileDialog>
 #include <QTextStream>
+#include <QCloseEvent>
+#include <QMessageBox>
 
 StartWindow::StartWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,6 +15,14 @@ StartWindow::StartWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     setAcceptDrops(true);
+}
+
+void StartWindow::closeEvent(QCloseEvent *bar)
+{
+    if(!selectedImage){
+        qApp->exit();
+    }
+    bar->accept();
 }
 
 StartWindow::~StartWindow()
@@ -39,8 +49,9 @@ void StartWindow::dropEvent(QDropEvent* e)
         {
             if (accepted_types.contains(info.suffix().trimmed(), Qt::CaseInsensitive)){
                 qInfo() << "Selected File: " << fname << "\n info " << info ;
-                emit setImage(fname);
+                selectedImage = true;
                 emit childClosed();
+                emit setImage(fname);
                 close();
 
             }
@@ -56,8 +67,9 @@ void StartWindow::on_pushButton_clicked()
         "C://",
         "Image File (*.jpg *.png)"
         );
-    emit setImage(filePath);
+    selectedImage = true;
     emit childClosed();
+    emit setImage(filePath);
     close();
 }
 

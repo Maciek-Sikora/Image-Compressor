@@ -27,8 +27,8 @@ private:
     void dragEnterEvent(QDragEnterEvent *e);
     void dropEvent(QDropEvent* e);
 
-
-
+    void closeEvent(QCloseEvent *bar);
+    bool selectedImage = false;
 public:
 signals:
     void setImage(const QString& imagePath);
