@@ -32,8 +32,9 @@ private slots:
 
 signals:
 public slots:
-    void setImage(QPixmap qPixmap);
-    void setImage(QString filePath);
+    void onSetImage(QPixmap qPixmap);
+    void onSetImage(QString filePath);
+    void displayMainWindow();
 
 private:
     Ui::MainWindow *ui;

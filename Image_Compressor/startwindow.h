@@ -27,9 +27,12 @@ private:
     void dragEnterEvent(QDragEnterEvent *e);
     void dropEvent(QDropEvent* e);
 
+
+
 public:
 signals:
-    void childSignal(const QString& imagePath);
+    void setImage(const QString& imagePath);
+    void childClosed();
 };
 
 #endif // STARTWINDOW_H

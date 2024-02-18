@@ -39,7 +39,9 @@ void StartWindow::dropEvent(QDropEvent* e)
         {
             if (accepted_types.contains(info.suffix().trimmed(), Qt::CaseInsensitive)){
                 qInfo() << "Selected File: " << fname << "\n info " << info ;
-               emit childSignal(fname);
+                emit setImage(fname);
+                emit childClosed();
+                close();
 
             }
         }
@@ -54,6 +56,8 @@ void StartWindow::on_pushButton_clicked()
         "C://",
         "Image File (*.jpg *.png)"
         );
-    emit childSignal(filePath);
+    emit setImage(filePath);
+    emit childClosed();
+    close();
 }
 

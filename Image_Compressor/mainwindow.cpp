@@ -13,14 +13,16 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
-
     startWindow = new StartWindow(this);
-    QObject::connect(startWindow, SIGNAL(childSignal(const QString&)), this, SLOT(setImage(const QString&)));
+    QObject::connect(startWindow, SIGNAL(setImage(const QString&)), this, SLOT(onSetImage(const QString&)));
+    QObject::connect(startWindow, SIGNAL(childClosed()), this, SLOT(displayMainWindow()));
     startWindow->show();
+    ui->setupUi(this);
     setAcceptDrops(true);
-    qDebug() << "Opencv version: " CV_VERSION;
     this->setMaximumSize(qApp->screens()[0]->size());
+}
+void MainWindow::displayMainWindow(){
+    this->show();
 
 }
 
@@ -48,12 +50,12 @@ void MainWindow::dropEvent(QDropEvent* e)
         {
             if (accepted_types.contains(info.suffix().trimmed(), Qt::CaseInsensitive)){
                 qInfo() << "Selected File: " << fname << "\n info " << info ;
-                setImage(fname);
+                onSetImage(fname);
             }
         }
     }
 }
-void MainWindow::setImage(QString filePath){
+void MainWindow::onSetImage(QString filePath){
     if (!filePath.isEmpty()) {
         qInfo() << "Selected File: " << filePath;
         QPixmap image(filePath);
@@ -68,7 +70,7 @@ void MainWindow::setImage(QString filePath){
         qWarning() << "No file selected.";
     }
 }
-void MainWindow::setImage(QPixmap qPixmap){
+void MainWindow::onSetImage(QPixmap qPixmap){
 
     int w = ui->label_Image->width();
     int h = ui->label_Image->height();
@@ -83,7 +85,7 @@ void MainWindow::on_pushButton_SelectPath_clicked()
         "C://",
         "Image File (*.jpg *.png)"
         );
-    setImage(filePath);
+    onSetImage(filePath);
 }
 
 
@@ -92,6 +94,6 @@ void MainWindow::on_horizontalSlider_sliderReleased()
 {
     calculator->ComputeRsvd(ui->horizontalSlider->value());
 
-   setImage(calculator->qPixmap_reconstructed_image);
+   onSetImage(calculator->qPixmap_reconstructed_image);
 }
 
