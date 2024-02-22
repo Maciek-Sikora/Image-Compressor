@@ -8,7 +8,9 @@
 #include <QScreen>
 #include <QObject>
 #include <QGuiApplication>
-
+#include <QtConcurrent>
+#include <QFuture>
+#include <QThread>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -59,14 +61,19 @@ void MainWindow::dropEvent(QDropEvent* e)
 void MainWindow::onSetImage(QString filePath){
     if (!filePath.isEmpty()) {
         qInfo() << "Selected File: " << filePath;
-        QPixmap image(filePath);
+        image = new QPixmap(filePath);
         int w = ui->label_Image->width();
         int h = ui->label_Image->height();
         // set a scaled pixmap to a w x h window keeping its aspect ratio
-        ui->label_Image->setPixmap(image.scaled(w,h,Qt::KeepAspectRatioByExpanding));
+        ui->label_Image->setPixmap((*image).scaled(w,h,Qt::KeepAspectRatioByExpanding));
         // ui->label_Image->setPixmap(image);
-        calculator = new Calculator(filePath);
 
+        calculator = new Calculator(filePath);
+        // calculator = new Calculator(filePath);
+
+
+        k = fmin(image->width(), image->height());
+        updateStats();
     } else {
         qWarning() << "No file selected.";
     }
@@ -78,6 +85,7 @@ void MainWindow::onSetImage(QPixmap qPixmap){
     // set a scaled pixmap to a w x h window keeping its aspect ratio
     ui->label_Image->setPixmap(qPixmap.scaled(w,h,Qt::KeepAspectRatioByExpanding));
 }
+
 void MainWindow::on_pushButton_SelectPath_clicked()
 {
     QString filePath = QFileDialog::getOpenFileName(
@@ -89,12 +97,24 @@ void MainWindow::on_pushButton_SelectPath_clicked()
     onSetImage(filePath);
 }
 
+void MainWindow::updateStats(){
+    QString size = QString::number(image->width()) + " x " + QString::number(image->height());
+    ui->ImageSize->setText(size);
+    QString pixels = QString::number(image->width() * image->height());
+    ui->NumberOfPixels->setText(pixels);
+    QString optimalization = QString::number((image->width() * k) + k + (k * image->height()));
+    ui->CompressedSize->setText(optimalization);
+}
 
-
+void MainWindow::computeRsvd(int k) {
+    calculator->ComputeRsvd(k);
+}
 void MainWindow::on_horizontalSlider_sliderReleased()
 {
-    calculator->ComputeRsvd(ui->horizontalSlider->value());
-
-   onSetImage(calculator->qPixmap_reconstructed_image);
+    k = ui->horizontalSlider->value();
+    QFuture <void> future = QtConcurrent::run(&MainWindow::computeRsvd, this, k);
+    // calculator->ComputeRsvd(k);
+    onSetImage(calculator->qPixmap_reconstructed_image);
+    updateStats();
 }
 
