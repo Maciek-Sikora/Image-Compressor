@@ -27,18 +27,28 @@ private slots:
     void dropEvent(QDropEvent *e);
     void dragEnterEvent(QDragEnterEvent *e);
     void on_horizontalSlider_sliderReleased();
+    void blockUI();
 
 
+public: signals:
+    void computationFinished();
 
 signals:
 public slots:
-    void onSetImage(QPixmap qPixmap);
     void onSetImage(QString filePath);
     void displayMainWindow();
+    void onUnlockUI();
 
 private:
     Ui::MainWindow *ui;
     Calculator *calculator;
     StartWindow *startWindow;
+    void updateStats();
+    QPixmap* image;
+    int k;
+    void setImage(QPixmap qPixmap);
+
+public:
+    void computeRsvd(int k);
 };
 #endif // MAINWINDOW_H

@@ -29,6 +29,7 @@ private:
 
     void closeEvent(QCloseEvent *bar);
     bool selectedImage = false;
+
 public:
 signals:
     void setImage(const QString& imagePath);

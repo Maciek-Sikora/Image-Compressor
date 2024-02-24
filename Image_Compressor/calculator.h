@@ -17,8 +17,10 @@
 
 
 
-class Calculator
+class Calculator : public QObject
 {
+    Q_OBJECT
+
 public:
     Calculator(QString& pathToImage);
     void ComputeRsvd(int k);
@@ -33,8 +35,6 @@ private:
     cv::Mat u;
     cv::Mat vt;
     Eigen::MatrixXd eigen_matrix;
-
-
 
 };
 

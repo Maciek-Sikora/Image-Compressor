@@ -43,6 +43,6 @@ void Calculator::ComputeRsvd(int k)
 
     // Convert the Eigen matrix back to OpenCV Mat using the Mat constructor
     qPixmap_reconstructed_image = QPixmap::fromImage(matrixXdToQImage(reconstructed_matrix));
-
+    qInfo() << "Done";
 
 }

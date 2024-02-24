@@ -69,7 +69,7 @@ void MainWindow::onSetImage(QString filePath){
         // ui->label_Image->setPixmap(image);
 
         calculator = new Calculator(filePath);
-        // calculator = new Calculator(filePath);
+
 
 
         k = fmin(image->width(), image->height());
@@ -78,7 +78,7 @@ void MainWindow::onSetImage(QString filePath){
         qWarning() << "No file selected.";
     }
 }
-void MainWindow::onSetImage(QPixmap qPixmap){
+void MainWindow::setImage(QPixmap qPixmap){
 
     int w = ui->label_Image->width();
     int h = ui->label_Image->height();
@@ -105,16 +105,28 @@ void MainWindow::updateStats(){
     QString optimalization = QString::number((image->width() * k) + k + (k * image->height()));
     ui->CompressedSize->setText(optimalization);
 }
-
-void MainWindow::computeRsvd(int k) {
-    calculator->ComputeRsvd(k);
+void MainWindow::blockUI(){
+    // ui->
+    ui->horizontalSlider->setDisabled(true);
 }
+void MainWindow::onUnlockUI(){
+    ui->horizontalSlider->setDisabled(false);
+}
+void MainWindow::computeRsvd(int k) {
+
+    calculator->ComputeRsvd(k);
+    setImage(calculator->qPixmap_reconstructed_image);
+    emit computationFinished();
+}
+
 void MainWindow::on_horizontalSlider_sliderReleased()
 {
+    blockUI();
     k = ui->horizontalSlider->value();
     QFuture <void> future = QtConcurrent::run(&MainWindow::computeRsvd, this, k);
-    // calculator->ComputeRsvd(k);
-    onSetImage(calculator->qPixmap_reconstructed_image);
-    updateStats();
+    QFutureWatcher<void> *watcher = new QFutureWatcher<void>(this);
+    connect(watcher, SIGNAL(finished()), this, SLOT(onUnlockUI()), Qt::QueuedConnection);
+    watcher->setFuture(future);
+
 }
 
