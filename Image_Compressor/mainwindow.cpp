@@ -106,16 +106,19 @@ void MainWindow::updateStats(){
     ui->CompressedSize->setText(optimalization);
 }
 void MainWindow::blockUI(){
-    // ui->
+    ui->pushButton_SelectPath->setDisabled(true);
     ui->horizontalSlider->setDisabled(true);
+    setAcceptDrops(false);
 }
 void MainWindow::onUnlockUI(){
+    ui->pushButton_SelectPath->setDisabled(false);
     ui->horizontalSlider->setDisabled(false);
+    setAcceptDrops(true);
 }
 void MainWindow::computeRsvd(int k) {
 
     calculator->ComputeRsvd(k);
-    setImage(calculator->qPixmap_reconstructed_image);
+    setImage(calculator->qPixmap_merged_image);
     emit computationFinished();
 }
 

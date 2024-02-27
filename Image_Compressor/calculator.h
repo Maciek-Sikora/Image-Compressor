@@ -6,7 +6,7 @@
 #include <QDebug>
 #include <QFileDialog>
 #include <QTextStream>
-
+#include <QPainter>
 #include <Eigen/dense>
 #include <Eigen/Core>
 #include "opencv2/core/eigen.hpp"
@@ -24,17 +24,19 @@ class Calculator : public QObject
 public:
     Calculator(QString& pathToImage);
     void ComputeRsvd(int k);
-    QImage matrixXdToQImage(Eigen::MatrixXd& matrix);
-    QPixmap qPixmap_reconstructed_image;
+    void matrixXdToQImage(Eigen::MatrixXd& matrix, int channel);
+    QImage qImage_merged_image;
+    QPixmap qPixmap_merged_image;
 
 
 private:
     QString path;
     cv::Mat image;
+    cv::Mat channels[3];
     cv::Mat w;
     cv::Mat u;
     cv::Mat vt;
-    Eigen::MatrixXd eigen_matrix;
+    Eigen::MatrixXd eigen_matrices[3];
 
 };
 
