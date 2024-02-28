@@ -91,7 +91,7 @@
         <item>
          <layout class="QGridLayout" name="gridLayout_2" rowstretch="1,1,1,4">
           <item row="0" column="1">
-           <widget class="QLabel" name="ImageSize">
+           <widget class="QLabel" name="label_Size">
             <property name="minimumSize">
              <size>
               <width>80</width>
@@ -120,7 +120,7 @@
            </spacer>
           </item>
           <item row="2" column="1">
-           <widget class="QLabel" name="label_8">
+           <widget class="QLabel" name="label_Weigh">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -196,7 +196,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLabel" name="NumberOfPixels">
+           <widget class="QLabel" name="label_Pixels">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -260,7 +260,7 @@
         <item>
          <layout class="QGridLayout" name="gridLayout_3">
           <item row="0" column="1">
-           <widget class="QLabel" name="label_10">
+           <widget class="QLabel" name="label_MaxK">
             <property name="text">
              <string>100</string>
             </property>
@@ -270,7 +270,7 @@
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QLabel" name="label_13">
+           <widget class="QLabel" name="label_CompWeigh">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -280,7 +280,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLabel" name="CompressedSize">
+           <widget class="QLabel" name="label_CompSize">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -306,7 +306,7 @@
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QLabel" name="label_14">
+           <widget class="QLabel" name="label_CompRatio">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -364,7 +364,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLabel" name="label_4">
+           <widget class="QLabel" name="label_SingularValues">
             <property name="text">
              <string>TextLabel</string>
             </property>

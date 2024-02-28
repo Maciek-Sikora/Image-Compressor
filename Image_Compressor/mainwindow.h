@@ -30,6 +30,8 @@ private slots:
     void blockUI();
 
 
+    void on_horizontalSlider_valueChanged(int value);
+
 public: signals:
     void computationFinished();
 
@@ -43,11 +45,13 @@ private:
     Ui::MainWindow *ui;
     Calculator *calculator;
     StartWindow *startWindow;
-    void updateStats();
+    void updateStats(long long singularValue);
     QPixmap* image;
     int k;
     void setImage(QPixmap qPixmap);
-
+    long long pixels, optimalization;
+    float weigh, svd_weigh, svd_ratio;
+    int max_SingularValues;
 public:
     void computeRsvd(int k);
 };

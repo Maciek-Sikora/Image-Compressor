@@ -11,6 +11,8 @@
 #include <QtConcurrent>
 #include <QFuture>
 #include <QThread>
+#include <QString>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -71,9 +73,9 @@ void MainWindow::onSetImage(QString filePath){
         calculator = new Calculator(filePath);
 
 
-
-        k = fmin(image->width(), image->height());
-        updateStats();
+        max_SingularValues = fmin(image->width(), image->height());
+        k = max_SingularValues;
+        updateStats(k);
     } else {
         qWarning() << "No file selected.";
     }
@@ -97,13 +99,28 @@ void MainWindow::on_pushButton_SelectPath_clicked()
     onSetImage(filePath);
 }
 
-void MainWindow::updateStats(){
+void MainWindow::updateStats(long long singularValue){
     QString size = QString::number(image->width()) + " x " + QString::number(image->height());
-    ui->ImageSize->setText(size);
-    QString pixels = QString::number(image->width() * image->height());
-    ui->NumberOfPixels->setText(pixels);
-    QString optimalization = QString::number((image->width() * k) + k + (k * image->height()));
-    ui->CompressedSize->setText(optimalization);
+    ui->label_Size->setText(size);
+
+    pixels = image->width() * image->height();
+    ui->label_Pixels->setText(QString::number(pixels));
+
+    weigh = image->width() * image->height() * 3  * sizeof(double)/ (1024 * 1024);
+    ui->label_Weigh->setText(QString::number(weigh, 'f', 2) + " MB");
+
+    ui->label_MaxK->setText(QString::number(max_SingularValues));
+    ui->label_SingularValues->setText(QString::number(singularValue));
+
+    optimalization = (image->width() * singularValue) + singularValue + (singularValue * image->height());
+    ui->label_CompSize->setText(QString::number(optimalization));
+
+    svd_weigh = ((image->width() * singularValue) + singularValue + (singularValue * image->height())) * 3 * sizeof(double)/ (1024.0 * 1024.0);
+    ui->label_CompWeigh->setText(QString::number(svd_weigh , 'f', 2) + " MB");
+
+    svd_ratio = image->width() * image->height() / ((image->width() * singularValue) + singularValue + (singularValue * image->height()));
+    ui->label_CompRatio->setText(QString::number(svd_ratio));
+
 }
 void MainWindow::blockUI(){
     ui->pushButton_SelectPath->setDisabled(true);
@@ -125,11 +142,18 @@ void MainWindow::computeRsvd(int k) {
 void MainWindow::on_horizontalSlider_sliderReleased()
 {
     blockUI();
-    k = ui->horizontalSlider->value();
+    k = static_cast<int>(ui->horizontalSlider->value() * max_SingularValues/ 100) ;
     QFuture <void> future = QtConcurrent::run(&MainWindow::computeRsvd, this, k);
     QFutureWatcher<void> *watcher = new QFutureWatcher<void>(this);
     connect(watcher, SIGNAL(finished()), this, SLOT(onUnlockUI()), Qt::QueuedConnection);
     watcher->setFuture(future);
+    updateStats(k);
+}
 
+
+void MainWindow::on_horizontalSlider_valueChanged(int value)
+{
+    ui->label_SingularValues->setText(QString::number(value));
+    updateStats(static_cast<int>(value * max_SingularValues / 100));
 }
 
