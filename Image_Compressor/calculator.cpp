@@ -52,22 +52,30 @@ void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
     }
 
 }
+void Calculator::RsvdChannel(int channel, int k){
+    RandomizedSvd rsvd(eigen_matrices[channel].cast<double>(), k);
+
+    const Eigen::VectorXd& singularValues = rsvd.singularValues();
+    const Eigen::MatrixXd& U = rsvd.matrixU();
+    const Eigen::MatrixXd& V = rsvd.matrixV();
+
+    Eigen::MatrixXd reconstructed_matrix = U * singularValues.asDiagonal() * V.transpose();
+    qInfo() << "Rec " << reconstructed_matrix(0,0);
+    matrixXdToQImage(reconstructed_matrix, channel);
+    qInfo() << "Done for channel" << channel;
+}
+
 void Calculator::ComputeRsvd(int k)
 {
-    std::vector<QImage> reconstructedImages(3);
     qImage_merged_image = QImage(channels[0].cols, channels[0].rows, QImage::Format_RGB32);
-    for (int ch = 0; ch < 3; ch++) {
-        RandomizedSvd rsvd(eigen_matrices[ch].cast<double>(), k);
 
-        const Eigen::VectorXd& singularValues = rsvd.singularValues();
-        const Eigen::MatrixXd& U = rsvd.matrixU();
-        const Eigen::MatrixXd& V = rsvd.matrixV();
+    QFuture <void> channelBlue = QtConcurrent::run(&Calculator::RsvdChannel, this, 0, k);
+    QFuture <void> channelGreen = QtConcurrent::run(&Calculator::RsvdChannel, this, 1, k);
+    QFuture <void> channelRed = QtConcurrent::run(&Calculator::RsvdChannel, this, 2, k);
 
-        Eigen::MatrixXd reconstructed_matrix = U * singularValues.asDiagonal() * V.transpose();
-        qInfo() << "Rec " << reconstructed_matrix(0,0);
-        matrixXdToQImage(reconstructed_matrix, ch);
-        qInfo() << "Done for channel" << ch;
-    }
+    channelBlue.waitForFinished();
+    channelGreen.waitForFinished();
+    channelRed.waitForFinished();
 
     qPixmap_merged_image = QPixmap::fromImage(qImage_merged_image);
 }

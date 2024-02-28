@@ -9,6 +9,9 @@
 #include <QPainter>
 #include <Eigen/dense>
 #include <Eigen/Core>
+#include <QtConcurrent>
+#include <QFuture>
+#include <QThread>
 #include "opencv2/core/eigen.hpp"
 #include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"
@@ -38,6 +41,7 @@ private:
     cv::Mat vt;
     Eigen::MatrixXd eigen_matrices[3];
 
+    void RsvdChannel(int channel, int k);
 };
 
 #endif // CALCULATOR_H
