@@ -13,7 +13,7 @@ Calculator::Calculator(QString& pathToImage):  path(pathToImage), stopThreads(fa
     cv::split(cvImage, channels);
 
     for (int ch = 0; ch < 3; ch++) {
-        channels[ch].convertTo(cvImage, CV_64F, 1.0 / 255.0);
+        channels[ch].convertTo(channels[ch], CV_64F, 1.0 / 255.0);
         cv::cv2eigen(channels[ch], eigen_matrices[ch]);
     }
 
@@ -47,7 +47,7 @@ void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
             int green = qGreen(currentColor);
             int blue = qBlue(currentColor);
 
-            int pixelValue = static_cast<int>(matrix(y, x));
+            int pixelValue = static_cast<int>(matrix(y, x) * 255);
             pixelValue = std::max(0, std::min(255, pixelValue));
 
             switch (channel) {

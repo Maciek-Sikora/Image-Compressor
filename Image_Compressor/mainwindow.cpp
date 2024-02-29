@@ -26,7 +26,6 @@ MainWindow::~MainWindow()
     delete calculator;
     delete startWindow;
     watcher->waitForFinished();
-    qInfo() << "end";
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent *e)

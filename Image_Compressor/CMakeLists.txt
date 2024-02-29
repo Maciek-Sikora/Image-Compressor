@@ -36,6 +36,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         randomized_svd.h
         resource.qrc
         startwindow.h startwindow.cpp startwindow.ui
+        randomized_svd.cpp
 
 
 
