@@ -3,37 +3,40 @@
 
 #include <QDialog>
 #include <QMainWindow>
+#include <QDragEnterEvent>
+#include <QMimeData>
+#include <QScreen>
+#include <QDebug>
+#include <QFileDialog>
+#include <QTextStream>
+#include <QCloseEvent>
+#include <QMessageBox>
 
 namespace Ui {
 class StartWindow;
 }
 
-class StartWindow : public QMainWindow
-{
+class StartWindow : public QMainWindow {
     Q_OBJECT
-
-
-
 
 public:
     explicit StartWindow(QWidget *parent = nullptr);
     ~StartWindow();
+
+signals:
+    void setImage(const QString& imagePath);
+    void childClosed();
 
 private slots:
     void on_pushButton_clicked();
 
 private:
     Ui::StartWindow *ui;
-    void dragEnterEvent(QDragEnterEvent *e);
-    void dropEvent(QDropEvent* e);
+    void dragEnterEvent(QDragEnterEvent *event);
+    void dropEvent(QDropEvent *event);
+    void closeEvent(QCloseEvent *event);
 
-    void closeEvent(QCloseEvent *bar);
     bool selectedImage = false;
-
-public:
-signals:
-    void setImage(const QString& imagePath);
-    void childClosed();
 };
 
 #endif // STARTWINDOW_H

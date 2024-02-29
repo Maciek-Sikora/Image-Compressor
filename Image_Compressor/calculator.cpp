@@ -2,23 +2,27 @@
 #include "randomized_svd.h"
 
 
-Calculator::Calculator(QString& pathToImage):  path(pathToImage)
+Calculator::Calculator(QString& pathToImage):  path(pathToImage), stopThreads(false)
 {
     cv::Mat cvImage = cv::imread(path.toStdString());
     if (cvImage.empty()) {
-        qDebug() << "Failed to load image!";
+        qCritical() << "Failed to load image!";
         return;
     }
 
     cv::split(cvImage, channels);
 
-    // Normalize the pixel values to the range [0, 1]
     for (int ch = 0; ch < 3; ch++) {
         channels[ch].convertTo(cvImage, CV_64F, 1.0 / 255.0);
         cv::cv2eigen(channels[ch], eigen_matrices[ch]);
     }
 
 
+}
+
+Calculator::~Calculator()
+{
+    stopThreads = true;
 }
 
 void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
@@ -32,6 +36,12 @@ void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
 
     for (int y = 0; y < height; ++y) {
         for (int x = 0; x < width; ++x) {
+
+            if (stopThreads) {
+                qInfo();
+                return;
+            }
+
             QRgb currentColor = qImage_merged_image.pixel(x, y);
             int red = qRed(currentColor);
             int green = qGreen(currentColor);
@@ -39,13 +49,19 @@ void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
 
             int pixelValue = static_cast<int>(matrix(y, x));
             pixelValue = std::max(0, std::min(255, pixelValue));
-            if (channel == 0) {
+
+            switch (channel) {
+            case 0:
                 blue = pixelValue;
-            } else if (channel == 1) {
+                break;
+            case 1:
                 green = pixelValue;
-            } else if (channel == 2) {
+                break;
+            case 2:
                 red = pixelValue;
+                break;
             }
+
             QRgb color = qRgb(red, green, blue);
             qImage_merged_image.setPixel(x, y, color);
         }
@@ -60,7 +76,6 @@ void Calculator::RsvdChannel(int channel, int k){
     const Eigen::MatrixXd& V = rsvd.matrixV();
 
     Eigen::MatrixXd reconstructed_matrix = U * singularValues.asDiagonal() * V.transpose();
-    qInfo() << "Rec " << reconstructed_matrix(0,0);
     matrixXdToQImage(reconstructed_matrix, channel);
     qInfo() << "Done for channel" << channel;
 }
@@ -76,6 +91,10 @@ void Calculator::ComputeRsvd(int k)
     channelBlue.waitForFinished();
     channelGreen.waitForFinished();
     channelRed.waitForFinished();
+    if (qImage_merged_image.isNull()) {
+        qCritical() << "Failed to create merged image.";
+        return;
+    }
 
     qPixmap_merged_image = QPixmap::fromImage(qImage_merged_image);
 }

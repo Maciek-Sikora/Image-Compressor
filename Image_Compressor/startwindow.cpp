@@ -1,13 +1,5 @@
 #include "startwindow.h"
 #include "ui_startwindow.h"
-#include <QDragEnterEvent>
-#include <QMimeData>
-#include <QScreen>
-#include <QDebug>
-#include <QFileDialog>
-#include <QTextStream>
-#include <QCloseEvent>
-#include <QMessageBox>
 
 StartWindow::StartWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,44 +9,39 @@ StartWindow::StartWindow(QWidget *parent) :
     setAcceptDrops(true);
 }
 
-void StartWindow::closeEvent(QCloseEvent *bar)
-{
-    if(!selectedImage){
-        qApp->exit();
-    }
-    bar->accept();
-}
-
 StartWindow::~StartWindow()
 {
     delete ui;
 }
 
-void StartWindow::dragEnterEvent(QDragEnterEvent *e)
+void StartWindow::closeEvent(QCloseEvent *event)
 {
-    if (e->mimeData()->hasUrls()) {
-        e->acceptProposedAction();
+    if (!selectedImage) {
+        qApp->exit();
+    }
+    event->accept();
+}
+
+void StartWindow::dragEnterEvent(QDragEnterEvent *event)
+{
+    if (event->mimeData()->hasUrls()) {
+        event->acceptProposedAction();
     }
 }
 
-void StartWindow::dropEvent(QDropEvent* e)
+void StartWindow::dropEvent(QDropEvent *event)
 {
-    QStringList accepted_types;
-    accepted_types << "jpg" << "png";
-    foreach(const QUrl & url, e->mimeData()->urls())
+    QStringList acceptedTypes = {"jpg", "png"};
+    foreach(const QUrl &url, event->mimeData()->urls())
     {
-        QString fname = url.toLocalFile();
-        QFileInfo info(fname);
-        if (info.exists())
-        {
-            if (accepted_types.contains(info.suffix().trimmed(), Qt::CaseInsensitive)){
-                qInfo() << "Selected File: " << fname << "\n info " << info ;
-                selectedImage = true;
-                emit childClosed();
-                emit setImage(fname);
-                close();
-
-            }
+        QString filePath = url.toLocalFile();
+        QFileInfo fileInfo(filePath);
+        if (fileInfo.exists() && acceptedTypes.contains(fileInfo.suffix(), Qt::CaseInsensitive)) {
+            qInfo() << "Selected File: " << filePath << "\n info " << fileInfo;
+            selectedImage = true;
+            emit childClosed();
+            emit setImage(filePath);
+            close();
         }
     }
 }
@@ -67,6 +54,9 @@ void StartWindow::on_pushButton_clicked()
         "C://",
         "Image File (*.jpg *.png)"
         );
+    if (filePath.isEmpty()) {
+        qInfo() << "Selected wrong file! \n";
+    }
     selectedImage = true;
     emit childClosed();
     emit setImage(filePath);

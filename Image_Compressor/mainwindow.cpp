@@ -1,17 +1,5 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include <opencv2/core.hpp>
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/highgui.hpp>
-#include <QDragEnterEvent>
-#include <QMimeData>
-#include <QScreen>
-#include <QObject>
-#include <QGuiApplication>
-#include <QtConcurrent>
-#include <QFuture>
-#include <QThread>
-#include <QString>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -34,6 +22,11 @@ void MainWindow::displayMainWindow(){
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete image;
+    delete calculator;
+    delete startWindow;
+    watcher->waitForFinished();
+    qInfo() << "end";
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent *e)
@@ -54,37 +47,36 @@ void MainWindow::dropEvent(QDropEvent* e)
         if (info.exists())
         {
             if (accepted_types.contains(info.suffix().trimmed(), Qt::CaseInsensitive)){
-                qInfo() << "Selected File: " << fname << "\n info " << info ;
+                qInfo() << "Selected File: " << fname << "\n";
                 onSetImage(fname);
             }
         }
     }
 }
 void MainWindow::onSetImage(QString filePath){
-    if (!filePath.isEmpty()) {
-        qInfo() << "Selected File: " << filePath;
-        image = new QPixmap(filePath);
-        int w = ui->label_Image->width();
-        int h = ui->label_Image->height();
-        // set a scaled pixmap to a w x h window keeping its aspect ratio
-        ui->label_Image->setPixmap((*image).scaled(w,h,Qt::KeepAspectRatioByExpanding));
-        // ui->label_Image->setPixmap(image);
-
-        calculator = new Calculator(filePath);
-
-
-        max_SingularValues = fmin(image->width(), image->height());
-        k = max_SingularValues;
-        updateStats(k);
-    } else {
+    if (filePath.isEmpty())
+    {
         qWarning() << "No file selected.";
+        return;
     }
+
+    qInfo() << "Selected File: " << filePath;
+
+    image = new QPixmap(filePath);
+    int w = ui->label_Image->width();
+    int h = ui->label_Image->height();
+    ui->label_Image->setPixmap((*image).scaled(w, h, Qt::KeepAspectRatioByExpanding));
+
+    calculator = new Calculator(filePath);
+
+    max_SingularValues = qMin(image->width(), image->height());
+    k = max_SingularValues;
+    updateStats(k);
 }
 void MainWindow::setImage(QPixmap qPixmap){
 
     int w = ui->label_Image->width();
     int h = ui->label_Image->height();
-    // set a scaled pixmap to a w x h window keeping its aspect ratio
     ui->label_Image->setPixmap(qPixmap.scaled(w,h,Qt::KeepAspectRatioByExpanding));
 }
 
@@ -112,8 +104,8 @@ void MainWindow::updateStats(long long singularValue){
     ui->label_MaxK->setText(QString::number(max_SingularValues));
     ui->label_SingularValues->setText(QString::number(singularValue));
 
-    optimalization = (image->width() * singularValue) + singularValue + (singularValue * image->height());
-    ui->label_CompSize->setText(QString::number(optimalization));
+    optimization = (image->width() * singularValue) + singularValue + (singularValue * image->height());
+    ui->label_CompSize->setText(QString::number(optimization));
 
     svd_weigh = ((image->width() * singularValue) + singularValue + (singularValue * image->height())) * 3 * sizeof(double)/ (1024.0 * 1024.0);
     ui->label_CompWeigh->setText(QString::number(svd_weigh , 'f', 2) + " MB");
@@ -142,9 +134,9 @@ void MainWindow::computeRsvd(int k) {
 void MainWindow::on_horizontalSlider_sliderReleased()
 {
     blockUI();
-    k = static_cast<int>(ui->horizontalSlider->value() * max_SingularValues/ 100) ;
+    k = static_cast<int>(ui->horizontalSlider->value() * max_SingularValues / 100) ;
     QFuture <void> future = QtConcurrent::run(&MainWindow::computeRsvd, this, k);
-    QFutureWatcher<void> *watcher = new QFutureWatcher<void>(this);
+    watcher = new QFutureWatcher<void>(this);
     connect(watcher, SIGNAL(finished()), this, SLOT(onUnlockUI()), Qt::QueuedConnection);
     watcher->setFuture(future);
     updateStats(k);

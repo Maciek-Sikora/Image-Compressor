@@ -17,15 +17,13 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
-
-
-
 class Calculator : public QObject
 {
     Q_OBJECT
 
 public:
-    Calculator(QString& pathToImage);
+    explicit Calculator(QString& pathToImage);
+    ~Calculator();
     void ComputeRsvd(int k);
     void matrixXdToQImage(Eigen::MatrixXd& matrix, int channel);
     QImage qImage_merged_image;
@@ -34,7 +32,6 @@ public:
 
 private:
     QString path;
-    cv::Mat image;
     cv::Mat channels[3];
     cv::Mat w;
     cv::Mat u;
@@ -42,6 +39,8 @@ private:
     Eigen::MatrixXd eigen_matrices[3];
 
     void RsvdChannel(int channel, int k);
+
+    std::atomic<bool> stopThreads;
 };
 
 #endif // CALCULATOR_H
