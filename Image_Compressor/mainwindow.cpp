@@ -25,7 +25,8 @@ MainWindow::~MainWindow()
     delete image;
     delete calculator;
     delete startWindow;
-    watcher->waitForFinished();
+    if(watcher->isRunning())
+        watcher->waitForFinished();
 }
 
 void MainWindow::dragEnterEvent(QDragEnterEvent *e)
@@ -48,23 +49,33 @@ void MainWindow::dropEvent(QDropEvent* e)
             if (accepted_types.contains(info.suffix().trimmed(), Qt::CaseInsensitive)){
                 qInfo() << "Selected File: " << fname << "\n";
                 onSetImage(fname);
+            } else {
+                QMessageBox messageBox;
+                messageBox.critical(0,"Error","File doesn't exits or wrong type !");
+                messageBox.setFixedSize(500,200);
             }
         }
     }
 }
 void MainWindow::onSetImage(QString filePath){
+    qInfo() << "Selected File: " << filePath;
+
     if (filePath.isEmpty())
     {
-        qWarning() << "No file selected.";
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","File doesn't exits or wrong type !");
+        messageBox.setFixedSize(500,200);
         return;
     }
 
-    qInfo() << "Selected File: " << filePath;
-
     image = new QPixmap(filePath);
+    if (!checkPixmap(*image)){
+        return;
+    }
+
     int w = ui->label_Image->width();
     int h = ui->label_Image->height();
-    ui->label_Image->setPixmap((*image).scaled(w, h, Qt::KeepAspectRatioByExpanding));
+    ui->label_Image->setPixmap(image->scaled(w, h, Qt::KeepAspectRatioByExpanding));
 
     calculator = new Calculator(filePath);
 
@@ -72,11 +83,11 @@ void MainWindow::onSetImage(QString filePath){
     k = max_SingularValues;
     updateStats(k);
 }
-void MainWindow::setImage(QPixmap qPixmap){
-
+void MainWindow::setImage(QPixmap &img){
     int w = ui->label_Image->width();
     int h = ui->label_Image->height();
-    ui->label_Image->setPixmap(qPixmap.scaled(w,h,Qt::KeepAspectRatioByExpanding));
+    reconstructedImage = &img;
+    ui->label_Image->setPixmap(img.scaled(w,h,Qt::KeepAspectRatioByExpanding));
 }
 
 void MainWindow::on_pushButton_SelectPath_clicked()
@@ -84,10 +95,27 @@ void MainWindow::on_pushButton_SelectPath_clicked()
     QString filePath = QFileDialog::getOpenFileName(
         this,
         tr("Open File"),
-        "C://",
+        QString(),
         "Image File (*.jpg *.png)"
         );
     onSetImage(filePath);
+}
+
+bool MainWindow::checkPixmap(const QPixmap &qPixmap) {
+    if (qPixmap.width() < 30 || qPixmap.height() < 30) {
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Image is too small !");
+        messageBox.setFixedSize(500,200);
+        return false;
+    }
+
+    if (qPixmap.width() * qPixmap.height() > 400000) {
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Image is too large !");
+        messageBox.setFixedSize(500,200);
+        return false;
+    }
+    return true;
 }
 
 void MainWindow::updateStats(long long singularValue){
@@ -116,11 +144,13 @@ void MainWindow::updateStats(long long singularValue){
 void MainWindow::blockUI(){
     ui->pushButton_SelectPath->setDisabled(true);
     ui->horizontalSlider->setDisabled(true);
+    ui->pushButton_SaveImage->setDisabled(true);
     setAcceptDrops(false);
 }
 void MainWindow::onUnlockUI(){
     ui->pushButton_SelectPath->setDisabled(false);
     ui->horizontalSlider->setDisabled(false);
+    ui->pushButton_SaveImage->setDisabled(false);
     setAcceptDrops(true);
 }
 void MainWindow::computeRsvd(int k) {
@@ -146,5 +176,23 @@ void MainWindow::on_horizontalSlider_valueChanged(int value)
 {
     ui->label_SingularValues->setText(QString::number(value));
     updateStats(static_cast<int>(value * max_SingularValues / 100));
+}
+
+
+void MainWindow::on_pushButton_SaveImage_clicked()
+{
+    QString fileName = QFileDialog::getSaveFileName(this,
+                                                    tr("Save Image File"),
+                                                    QString(),
+                                                    tr("Images (*.jpg *.png)"));
+    if (!fileName.isEmpty())
+    {
+        reconstructedImage->save(fileName);
+    } else {
+        QMessageBox messageBox;
+        messageBox.critical(0, "Error", "The location doesn't exist !");
+        messageBox.setFixedSize(500,200);
+        return;
+    }
 }
 

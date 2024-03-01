@@ -42,6 +42,10 @@ void StartWindow::dropEvent(QDropEvent *event)
             emit childClosed();
             emit setImage(filePath);
             close();
+        } else {
+            QMessageBox messageBox;
+            messageBox.critical(0,"Error","File doesn't exits or wrong type !");
+            messageBox.setFixedSize(500,200);
         }
     }
 }
@@ -51,11 +55,14 @@ void StartWindow::on_pushButton_clicked()
     QString filePath = QFileDialog::getOpenFileName(
         this,
         tr("Open File"),
-        "C://",
+        QString(),
         "Image File (*.jpg *.png)"
         );
     if (filePath.isEmpty()) {
-        qInfo() << "Selected wrong file! \n";
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","File doesn't exits or wrong type !");
+        messageBox.setFixedSize(500,200);
+        return;
     }
     selectedImage = true;
     emit childClosed();

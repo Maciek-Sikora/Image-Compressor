@@ -99,7 +99,7 @@
              </size>
             </property>
             <property name="text">
-             <string>TextLabel</string>
+             <string>0</string>
             </property>
             <property name="margin">
              <number>6</number>
@@ -122,7 +122,7 @@
           <item row="2" column="1">
            <widget class="QLabel" name="label_Weigh">
             <property name="text">
-             <string>TextLabel</string>
+             <string>0</string>
             </property>
             <property name="margin">
              <number>6</number>
@@ -198,7 +198,7 @@
           <item row="1" column="1">
            <widget class="QLabel" name="label_Pixels">
             <property name="text">
-             <string>TextLabel</string>
+             <string>0</string>
             </property>
             <property name="margin">
              <number>6</number>
@@ -272,7 +272,7 @@
           <item row="3" column="1">
            <widget class="QLabel" name="label_CompWeigh">
             <property name="text">
-             <string>TextLabel</string>
+             <string>0</string>
             </property>
             <property name="margin">
              <number>6</number>
@@ -282,7 +282,7 @@
           <item row="2" column="1">
            <widget class="QLabel" name="label_CompSize">
             <property name="text">
-             <string>TextLabel</string>
+             <string>0</string>
             </property>
             <property name="margin">
              <number>6</number>
@@ -308,7 +308,7 @@
           <item row="4" column="1">
            <widget class="QLabel" name="label_CompRatio">
             <property name="text">
-             <string>TextLabel</string>
+             <string>0</string>
             </property>
             <property name="margin">
              <number>6</number>
@@ -366,7 +366,7 @@
           <item row="1" column="1">
            <widget class="QLabel" name="label_SingularValues">
             <property name="text">
-             <string>TextLabel</string>
+             <string>0</string>
             </property>
             <property name="margin">
              <number>6</number>
@@ -383,7 +383,7 @@
          </layout>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="pushButton_SaveImage">
           <property name="text">
            <string>Save</string>
           </property>

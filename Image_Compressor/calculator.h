@@ -12,6 +12,7 @@
 #include <QtConcurrent>
 #include <QFuture>
 #include <QThread>
+#include <QMessageBox>
 #include "opencv2/core/eigen.hpp"
 #include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"

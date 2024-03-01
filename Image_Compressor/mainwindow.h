@@ -50,14 +50,18 @@ private slots:
     void blockUI();
     void on_horizontalSlider_valueChanged(int value);
 
+    void on_pushButton_SaveImage_clicked();
+
 private:
     Ui::MainWindow *ui;
     Calculator *calculator;
     StartWindow *startWindow;
     QPixmap *image;
+    QPixmap *reconstructedImage;
     int k;
     QFutureWatcher<void> *watcher;
-    void setImage(QPixmap qPixmap);
+    void setImage(QPixmap& img);
+    bool checkPixmap(const QPixmap &qPixmap);
     void updateStats(long long singularValue);
 
     long long pixels;
@@ -67,7 +71,6 @@ private:
     float svd_ratio;
     int max_SingularValues;
     void computeRsvd(int k);
-
 
 };
 #endif // MAINWINDOW_H

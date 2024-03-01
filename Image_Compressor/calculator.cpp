@@ -6,7 +6,9 @@ Calculator::Calculator(QString& pathToImage):  path(pathToImage), stopThreads(fa
 {
     cv::Mat cvImage = cv::imread(path.toStdString());
     if (cvImage.empty()) {
-        qCritical() << "Failed to load image!";
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Image doesn't exist !");
+        messageBox.setFixedSize(500,200);
         return;
     }
 
@@ -30,7 +32,9 @@ void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
     int height = matrix.rows();
 
     if (qImage_merged_image.width() != width || qImage_merged_image.height() != height) {
-        qWarning() << "Dimensions of matrix and QImage do not match";
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Dimensions of matrix and QImage do not match !");
+        messageBox.setFixedSize(500,200);
         return;
     }
 
@@ -92,7 +96,9 @@ void Calculator::ComputeRsvd(int k)
     channelGreen.waitForFinished();
     channelRed.waitForFinished();
     if (qImage_merged_image.isNull()) {
-        qCritical() << "Failed to create merged image.";
+        QMessageBox messageBox;
+        messageBox.critical(0,"Error","Failed to create merged image !");
+        messageBox.setFixedSize(500,200);
         return;
     }
 
