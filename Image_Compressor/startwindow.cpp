@@ -6,6 +6,8 @@ StartWindow::StartWindow(QWidget *parent) :
     ui(new Ui::StartWindow)
 {
     ui->setupUi(this);
+    this->setWindowTitle("SVD Compression");
+    this->setWindowIcon(QIcon(":/templates/templates/iconCOMP.png"));
     setAcceptDrops(true);
 }
 

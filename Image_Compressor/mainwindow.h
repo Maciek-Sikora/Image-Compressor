@@ -17,6 +17,8 @@
 #include <QFuture>
 #include <QThread>
 #include <QString>
+#include <QProgressBar>
+#include <QFutureWatcher>
 #include "calculator.h"
 #include "startwindow.h"
 
@@ -41,6 +43,7 @@ public slots:
     void onSetImage(QString filePath);
     void displayMainWindow();
     void onUnlockUI();
+    void onProgressValueChanged(float progress);
 
 private slots:
     void on_pushButton_SelectPath_clicked();
@@ -71,6 +74,7 @@ private:
     float svd_ratio;
     int max_SingularValues;
     void computeRsvd(int k);
+    QProgressBar* progressBar;
 
 };
 #endif // MAINWINDOW_H

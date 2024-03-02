@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/templates">
         <file>templates/layout.png</file>
+        <file>templates/iconCOMP.png</file>
     </qresource>
 </RCC>

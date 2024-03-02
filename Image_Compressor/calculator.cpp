@@ -11,7 +11,6 @@ Calculator::Calculator(QString& pathToImage):  path(pathToImage), stopThreads(fa
         messageBox.setFixedSize(500,200);
         return;
     }
-
     cv::split(cvImage, channels);
 
     for (int ch = 0; ch < 3; ch++) {
@@ -27,6 +26,16 @@ Calculator::~Calculator()
     stopThreads = true;
 }
 
+void Calculator::tick(){
+    ticks++;
+    ticksClock++;
+    if (ticksClock % 5000 == 0) {
+        float progress = static_cast<float>(ticks) / allTicks;
+        emit progressValueChangedMy(progress);
+        ticksClock = 0;
+    }
+
+}
 void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
     int width = matrix.cols();
     int height = matrix.rows();
@@ -40,6 +49,8 @@ void Calculator::matrixXdToQImage(Eigen::MatrixXd& matrix, int channel) {
 
     for (int y = 0; y < height; ++y) {
         for (int x = 0; x < width; ++x) {
+
+            tick();
 
             if (stopThreads) {
                 qInfo();
@@ -88,6 +99,8 @@ void Calculator::ComputeRsvd(int k)
 {
     qImage_merged_image = QImage(channels[0].cols, channels[0].rows, QImage::Format_RGB32);
 
+    ticks = 0;
+    allTicks = channels[0].cols * channels[0].rows * 3;
     QFuture <void> channelBlue = QtConcurrent::run(&Calculator::RsvdChannel, this, 0, k);
     QFuture <void> channelGreen = QtConcurrent::run(&Calculator::RsvdChannel, this, 1, k);
     QFuture <void> channelRed = QtConcurrent::run(&Calculator::RsvdChannel, this, 2, k);

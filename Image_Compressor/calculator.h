@@ -30,6 +30,9 @@ public:
     QImage qImage_merged_image;
     QPixmap qPixmap_merged_image;
 
+signals:
+
+    void progressValueChangedMy(float progress);
 
 private:
     QString path;
@@ -40,6 +43,11 @@ private:
     Eigen::MatrixXd eigen_matrices[3];
 
     void RsvdChannel(int channel, int k);
+
+    long long ticks;
+    long long allTicks;
+    long long ticksClock;
+    void tick();
 
     std::atomic<bool> stopThreads;
 };

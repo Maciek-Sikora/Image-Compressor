@@ -259,54 +259,8 @@
         </item>
         <item>
          <layout class="QGridLayout" name="gridLayout_3">
-          <item row="0" column="1">
-           <widget class="QLabel" name="label_MaxK">
-            <property name="text">
-             <string>100</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QLabel" name="label_CompWeigh">
-            <property name="text">
-             <string>0</string>
-            </property>
-            <property name="margin">
-             <number>6</number>
-            </property>
-           </widget>
-          </item>
           <item row="2" column="1">
            <widget class="QLabel" name="label_CompSize">
-            <property name="text">
-             <string>0</string>
-            </property>
-            <property name="margin">
-             <number>6</number>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_5">
-            <property name="font">
-             <font>
-              <family>Segoe UI Light</family>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>Pixels</string>
-            </property>
-            <property name="margin">
-             <number>4</number>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QLabel" name="label_CompRatio">
             <property name="text">
              <string>0</string>
             </property>
@@ -331,8 +285,8 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_11">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_5">
             <property name="font">
              <font>
               <family>Segoe UI Light</family>
@@ -340,10 +294,57 @@
              </font>
             </property>
             <property name="text">
-             <string>Weigh</string>
+             <string>Pixels</string>
             </property>
             <property name="margin">
              <number>4</number>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_CompWeigh">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="margin">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_SingularValues">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="margin">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_CompRatio">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="margin">
+             <number>6</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_MaxK">
+            <property name="text">
+             <string>100</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>1</string>
             </property>
            </widget>
           </item>
@@ -363,20 +364,19 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="label_SingularValues">
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <family>Segoe UI Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
             <property name="text">
-             <string>0</string>
+             <string>Weigh</string>
             </property>
             <property name="margin">
-             <number>6</number>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_9">
-            <property name="text">
-             <string>1</string>
+             <number>4</number>
             </property>
            </widget>
           </item>

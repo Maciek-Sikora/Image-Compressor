@@ -11,6 +11,8 @@ MainWindow::MainWindow(QWidget *parent)
     QObject::connect(startWindow, SIGNAL(childClosed()), this, SLOT(displayMainWindow()));
     startWindow->show();
     ui->setupUi(this);
+    this->setWindowTitle("SVD Compression");
+    this->setWindowIcon(QIcon(":/templates/templates/iconCOMP.png"));
     setAcceptDrops(true);
     this->setMaximumSize(qApp->screens()[0]->size());
 }
@@ -145,15 +147,25 @@ void MainWindow::blockUI(){
     ui->pushButton_SelectPath->setDisabled(true);
     ui->horizontalSlider->setDisabled(true);
     ui->pushButton_SaveImage->setDisabled(true);
+    progressBar = new QProgressBar();
+    ui->verticalLayout->addWidget(progressBar);
     setAcceptDrops(false);
 }
 void MainWindow::onUnlockUI(){
     ui->pushButton_SelectPath->setDisabled(false);
     ui->horizontalSlider->setDisabled(false);
     ui->pushButton_SaveImage->setDisabled(false);
+    delete progressBar;
     setAcceptDrops(true);
 }
-void MainWindow::computeRsvd(int k) {
+
+void MainWindow::onProgressValueChanged(float progress)
+{
+    progressBar->setValue(static_cast<int>(progress * 100));
+}
+
+void MainWindow::computeRsvd(int k)
+{
 
     calculator->ComputeRsvd(k);
     setImage(calculator->qPixmap_merged_image);
@@ -167,6 +179,7 @@ void MainWindow::on_horizontalSlider_sliderReleased()
     QFuture <void> future = QtConcurrent::run(&MainWindow::computeRsvd, this, k);
     watcher = new QFutureWatcher<void>(this);
     connect(watcher, SIGNAL(finished()), this, SLOT(onUnlockUI()), Qt::QueuedConnection);
+    connect(calculator, SIGNAL(progressValueChangedMy(float)), this, SLOT(onProgressValueChanged(float)), Qt::QueuedConnection);
     watcher->setFuture(future);
     updateStats(k);
 }
