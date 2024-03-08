@@ -83,6 +83,8 @@ void MainWindow::onSetImage(QString filePath){
 
     max_SingularValues = qMin(image->width(), image->height());
     k = max_SingularValues;
+    ui->horizontalSlider->setSliderPosition(k);
+
     updateStats(k);
 }
 void MainWindow::setImage(QPixmap &img){
